@@ -1,0 +1,40 @@
+.page-footer {
+  background-color: #929FBA;
+}
+
+.input-qtde {
+  width: 117px !important;
+}
+
+.slide {
+  background-repeat: no-repeat; 
+  background-size: cover;
+}
+
+.slide #capa1 {
+  background-image: url(../img/capa1.jpg);
+}
+
+.slide #capa2 {
+  background-image: url(../img/capa2.jpg);
+}
+
+.slide #capa3 {
+  background-image: url(../img/capa3.jpg);
+}
+
+.centralizar {
+  text-align: center;
+}
+
+.input-qtde-carrinho {
+  width: 50px;
+}
+
+.btn-continuar {
+  width: 500px;
+}
+
+.formasPagamento {
+  width: 50%;
+}

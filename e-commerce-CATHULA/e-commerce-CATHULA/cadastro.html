@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Material Design Bootstrap</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="css/mdb.min.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="grey lighten-3">
+
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light white scrolling-navbar">
+    <div class="container">
+
+      <a class="navbar-brand waves-effect" href="index.html">
+        <strong class="blue-text">Personalize</strong>
+      </a>
+
+      <div class="collapse navbar-collapse" id="navbar">
+
+        <ul class="navbar-nav mr-auto">
+        </ul>
+
+        <ul class="navbar-nav nav-flex-icons">
+          <li class="nav-item">
+            <a href="login.html" class="nav-link border border-light rounded waves-effect">
+              <i class="fa fa-user mr-2"></i>Login
+            </a>
+          </li>
+        </ul>
+
+      </div>
+
+    </div>
+  </nav>
+  
+  <main class="mt-5 pt-4">
+
+    <div class="container wow fadeIn">
+
+        <div class="row card">
+          <h2 class="my-5 h2 text-center">Cadastre-se</h2>
+        <div class="col-md-12">
+
+          <form class="card-body">
+
+            <div class="row">
+              <div class="d-block col-md-12 ">
+                <label for="country">Tipo</label>
+                <div class="row pl-3">
+                  <div class="col-md-2 custom-control custom-radio">
+                    <input id="fisica" name="tipoPessoa" type="radio" class="custom-control-input" checked required>
+                    <label class="custom-control-label" for="fisica">Pessoa física</label>
+                  </div>
+                  <div class="col-md-2 custom-control custom-radio">
+                    <input id="juridica" name="tipoPessoa" type="radio" class="custom-control-input" required>
+                    <label class="custom-control-label" for="juridica">Pessoa jurídica</label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6 mb-2">
+                <div class="md-form ">
+                  <input type="text" id="firstName" class="form-control">
+                  <label for="firstName" class="">Nome</label>
+                </div>
+              </div>
+              
+              <div class="col-md-6 mb-2">
+                <div class="md-form">
+                  <input type="text" id="lastName" class="form-control">
+                  <label for="lastName" class="">Sobrenome </label>
+                </div>
+              </div>
+            </div>
+            
+            <div class="md-form">
+              <input type="text" id="email" class="form-control" placeholder="email@exemplo.com">
+              <label for="email" class="">Email</label>
+            </div>
+
+            <div class="row">
+              <div class="col-md-6 mb-2">
+                <div class="md-form ">
+                  <input type="password" id="senha" class="form-control">
+                  <label for="senha" class="">Senha</label>
+                </div>
+              </div>
+              
+              <div class="col-md-6 mb-2">
+                <div class="md-form">
+                  <input type="password" id="confirmaSenha" class="form-control">
+                  <label for="confirmaSenha" class="">Confirme sua senha </label>
+                </div>
+              </div>
+            </div>
+            
+            <div class="row">
+              <div class="col-md-4">
+                <label for="cpf">CPF</label>
+                <input type="text" class="form-control" id="cpf" placeholder="">
+              </div>
+              <div class="col-md-4">
+                <label for="nascimento">Data de nascimento</label>
+                <input type="text" class="form-control" id="nascimento" placeholder="">
+              </div>
+              <div class="col-md-4">
+                <label for="genero">Gênero</label>
+                <select class="custom-select d-block w-100" id="genero" required>
+                  <option value="">Selecione</option>
+                  <option>Feminino</option>
+                  <option>Masculino</option>
+                  <option>Não informado</option>
+                </select>
+                <div class="invalid-feedback">
+                  Por favor selecione um opção valida de Estado
+                </div>
+              </div>
+            </div>
+            
+            <div class="row mt-4">
+
+              <div class="col-lg-4 col-md-12 mb-4">
+                <label for="pais">País</label>
+                <select class="custom-select d-block w-100" id="pais" required>
+                  <option value="">Selecione</option>
+                  <option>Brasil</option>
+                </select>
+                <div class="invalid-feedback">
+                  Por favor selecione um opção valida de País
+                </div>
+              </div>
+              
+              <div class="col-lg-4 col-md-6 mb-4">
+                <label for="estado">Estado</label>
+                <select class="custom-select d-block w-100" id="estado" required>
+                  <option value="">Selecione</option>
+                  <option>Paraná</option>
+                </select>
+                <div class="invalid-feedback">
+                  Por favor selecione um opção valida de Estado
+                </div>
+              </div>
+              
+              <div class="col-lg-4 col-md-6 mb-4">
+                <label for="estado">Cidade</label>
+                <select class="custom-select d-block w-100" id="estado" required>
+                  <option value="">Selecione</option>
+                  <option>Curitiba</option>
+                  <option>Chopinzinho</option>
+                  <option>Coronel Vivida</option>
+                  <option>Fracisco Beltrão</option>
+                  <option>Pato Branco</option>
+                </select>
+                <div class="invalid-feedback">
+                  Por favor selecione um opção valida de Estado
+                </div>
+
+              </div>
+            </div>
+
+            <button class="btn btn-primary btn-lg btn-block" type="submit">Finalizar</button>
+            <br>
+            <p class="centralizar"><a href="login.html">Já tem uma conta? Faça login</a></p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>
+  
+ <footer class="page-footer text-center font-small mt-4 wow fadeIn">
+
+  <div class="row pt-4">
+
+    <div class="col-4 ">
+      <img src="img/logo.png" alt="logo" class="logo">
+    </div>
+
+    <div class="col-4">
+      <div class="row">
+        <div class="col-12">
+          <h5>Contato</h5>
+        </div>
+        <div class="col-12">
+          <a href="#">
+              <i class="fab fa-instagram mr-3"></i>@personalize
+          </a>
+        </div>
+        <div class="col-12">
+          <a href="#">
+            <i class="fab fa-facebook-f mr-3"></i>Personalize
+          </a>
+        </div>
+        <div class="col-12">
+          <a href="#">
+              <i class="fab fa-google mr-3"></i>personalize@gmail.com
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-4">
+          <h5>Formas de pagamento</h5>
+          <img class="formasPagamento" src="img/pagamentos.png" alt="Formas de pagamento">
+          <!-- <i class="fab fa-cc-mastercard mr-3"></i>
+          <i class="fab fa-cc-visa mr-3"></i>
+          <i class="fab fa-cc-amex mr-3"></i>
+          <i class="fas fa-barcode mr-3"></i> -->
+    </div>
+
+    <hr class="my-4">
+
+    <div class="col-12">
+      <p>Matriz: (46) 3225-0000 / Av. Brasil, 000 - Centro CEP 00000-000 - Pato Branco-PR / CNPJ 000000</p>
+    </div>
+
+  </div>
+
+  <div class="footer-copyright py-3">
+    © 2019 Copyright:
+    <a href="#" > Personalize.com </a>
+  </div>
+
+</footer>
+
+  <!-- SCRIPTS -->
+  <!-- JQuery -->
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <!-- Initializations -->
+  <script type="text/javascript">
+    // Animations initialization
+    new WOW().init();
+  </script>
+</body>
+
+</html>
