@@ -1,5 +1,11 @@
 $(function () {
     listar();
+
+    $('#btEnderecos').click(function (e) {
+        e.preventDefault();
+        resetarForm();
+    });
+
     $('#btAdicionar').click(function (e) {
         e.preventDefault();
         criarEndereco();
@@ -26,6 +32,7 @@ function setArrayStorage(endereco) {
     enderecos.push(endereco)
     localStorage.setItem("listaEndereco", JSON.stringify(enderecos));
     listar();
+    resetarForm();
 }
 
 function getArrayStorage() {
@@ -69,4 +76,10 @@ function novoEndereco(element) {
         html: cardEndereco(element)
     }
     $('#enderecos').append(linhaHtml.html);
+}
+
+function resetarForm() {
+    $('#form-adicionar').each (function(){
+        this.reset();
+    });
 }
