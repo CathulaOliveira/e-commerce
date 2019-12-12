@@ -91,52 +91,8 @@
             <h4 class="d-flex justify-content-between align-items-center mb-3">
               <span class="text-muted">Carrinho</span>
             </h4>
-          <div class="row">
-            <div class="col-md-12">
-              <div class="row">
-                <div class="col-md-4">
-                  <a href=""><img src="img/produto1.jpg" class="img-fluid" alt="Long Drink"></a>
-                </div>
-                <div class="col-md-8">
-                  <h5>Long Drink</h5>
-                  <span>R$ 1,20</span>
-                  <br>
-                  <span>Vendido e enviado por: <b>Personalize</b></span>
-                  <br>
-                  <span>Quantidade: 2</span>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-12 pt-3">
-                <div class="row">
-                  <div class="col-md-4">
-                    <a href=""><img src="img/produto1.jpg" class="img-fluid" alt="Long Drink"></a>
-                  </div>
-                  <div class="col-md-8">
-                    <h5>Long Drink</h5>
-                    <span>R$ 1,20</span>
-                    <br>
-                    <span>Vendido e enviado por: <b>Personalize</b></span>
-                    <br>
-                    <span>Quantidade: 1</span>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-12 pt-3">
-                <div class="row">
-                  <div class="col-md-4">
-                    <a href=""><img src="img/produto1.jpg" class="img-fluid" alt="Long Drink"></a>
-                  </div>
-                  <div class="col-md-8">
-                    <h5>Long Drink</h5>
-                    <span>R$ 1,20</span>
-                    <br>
-                    <span>Vendido e enviado por: <b>Personalize</b></span>
-                    <br>
-                    <span>Quantidade: 1</span>
-                  </div>
-                </div>
-              </div>
+          <div class="row" id="divProdutos">
+            <!-- divs criadas na classe javascript -->
           </div>
         </div>
 
@@ -187,7 +143,7 @@
             <hr class="my-4">
             <div class="col-md-12">
               <strong><label>Total: </label></strong>
-              <span>R$ 50,00</span>
+              <span id="total">R$</span>
             </div>
           </div>
         
@@ -282,6 +238,7 @@
   </script>
   <!-- Meu js -->
   <script type="text/javascript" src="js/principal.js"></script>
+  <script type="text/javascript" src="js/compra.js"></script>
 </body>
 
 </html>

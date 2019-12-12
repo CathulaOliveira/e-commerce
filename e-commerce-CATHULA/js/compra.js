@@ -3,11 +3,6 @@ var total = 0;
 $(function () {
     listar();
     setarTotal();
-
-    $('#btCodigoPromocional').click(function (e) {
-        e.preventDefault();
-        adicionarCodigoPromocional();
-    });
 })
 
 function listar() {
@@ -26,23 +21,21 @@ function getArrayStorage() {
 
 function linhaProdutoNoCarrinho(nome, valor, qtde) {
     let div = `
-       <div class="col-md-12">
-            <div class="row">
+        <div class="col-md-12">
+              <div class="row">
                 <div class="col-md-4">
-                    <a href=""><img src="img/produto1.jpg" class="img-fluid" alt="Long Drink"></a>
+                  <a href=""><img src="img/produto1.jpg" class="img-fluid" alt="Long Drink"></a>
                 </div>
                 <div class="col-md-8">
-                    <h5>${nome}</h5>
-                    <span>R$ ${valor.toFixed(2)}</span>
-                    <br>
-                    <span>Vendido e enviado por: <b>Personalize</b></span>
-                    <br>
-                    <a href=""><i class="fa fa-trash pr-1"></i>Excluir</a>
-                    <span class="pl-5">Quantidade: </span>
-                    <input class="input-qtde-carrinho" type="number" value="${qtde}" aria-label="Quantidade">
+                  <h5>${nome}</h5>
+                  <span>R$ ${valor.toFixed(2)}</span>
+                  <br>
+                  <span>Vendido e enviado por: <b>Personalize</b></span>
+                  <br>
+                  <span>Quantidade: ${qtde}</span>
                 </div>
+              </div>
             </div>
-        </div>
    `
    
     return div;
@@ -84,30 +77,4 @@ function setarTotal() {
 function atualizaTotal(item) {
     total += item.valor * item.quantidade;
     setarTotal();
-}
-
-function adicionarCodigoPromocional() {
-    let codigo = $('#codigoPromocional').val();
-    if (codigo) {
-        let linhaHtmlResumo = {
-            html: criaLinhaCodigoPromocional(codigo)
-        }
-        $('#listaResumo').append(linhaHtmlResumo.html);
-        
-    } else {
-        window.alert('Por favor informe um código promocional')
-    }
-}
-
-function criaLinhaCodigoPromocional(codigo) {
-    let li = `
-    <li class="list-group-item d-flex justify-content-between bg-light">
-        <div class="text-success">
-        <h6 class="my-0">Código promocional</h6>
-        <small>${codigo}</small>
-        </div>
-        <span class="text-success">-R$ 2,00</span>
-    </li>
-   `
-    return li;
 }

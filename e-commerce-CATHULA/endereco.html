@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Personalize</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="css/mdb.min.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="grey lighten-3">
+
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light white scrolling-navbar">
+    <div class="container">
+
+      <a class="navbar-brand waves-effect" href="index.html">
+        <strong class="blue-text">Personalize</strong>
+      </a>
+
+      <div class="collapse navbar-collapse" id="navbar">
+
+        <ul class="navbar-nav mr-auto">
+        </ul>
+
+        <ul class="navbar-nav nav-flex-icons">
+          <li class="nav-item">
+            <a href="login.html" class="nav-link border border-light rounded waves-effect">
+              <i class="fa fa-user mr-2"></i>Login
+            </a>
+          </li>
+        </ul>
+
+      </div>
+
+    </div>
+  </nav>
+  
+  <main class="mt-5 pt-4">
+
+    <div class="container wow fadeIn">
+
+        <div class="row card">
+            <h2 class="my-5 h2 text-center">Endereços</h2>
+
+            <div class="col-md-12">
+
+                <div class="row" id="enderecos">
+
+                </div>
+
+            </div>
+
+            <div class="col-md-12">
+                <button class="btn btn-primary btn-lg btn-block" type="submit" id="btEnderecos" data-toggle="modal"
+                data-target="#modal-endereco">Adicionar novo endereço</button> 
+            </div>
+        </div>
+    </div>
+  </main>
+  
+ <footer class="page-footer text-center font-small mt-4 wow fadeIn">
+
+  <div class="row pt-4">
+
+    <div class="col-4 ">
+      <img src="img/logo.png" alt="logo" class="logo">
+    </div>
+
+    <div class="col-4">
+      <div class="row">
+        <div class="col-12">
+          <h5>Contato</h5>
+        </div>
+        <div class="col-12">
+          <a href="#">
+              <i class="fab fa-instagram mr-3"></i>@personalize
+          </a>
+        </div>
+        <div class="col-12">
+          <a href="#">
+            <i class="fab fa-facebook-f mr-3"></i>Personalize
+          </a>
+        </div>
+        <div class="col-12">
+          <a href="#">
+              <i class="fab fa-google mr-3"></i>personalize@gmail.com
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-4">
+          <h5>Formas de pagamento</h5>
+          <img class="formasPagamento" src="img/pagamentos.png" alt="Formas de pagamento">
+          <!-- <i class="fab fa-cc-mastercard mr-3"></i>
+          <i class="fab fa-cc-visa mr-3"></i>
+          <i class="fab fa-cc-amex mr-3"></i>
+          <i class="fas fa-barcode mr-3"></i> -->
+    </div>
+
+    <hr class="my-4">
+
+    <div class="col-12">
+      <p>Matriz: (46) 3225-0000 / Av. Brasil, 000 - Centro CEP 00000-000 - Pato Branco-PR / CNPJ 000000</p>
+    </div>
+
+  </div>
+
+  <div class="footer-copyright py-3">
+    © 2019 Copyright:
+    <a href="#" > Personalize.com </a>
+  </div>
+
+</footer>
+
+<div class="modal fade" id="modal-endereco" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <p class="heading lead text-center w-100 mb-0">Novo endereço</p>
+
+                    <button type="button" class="close animated" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <!-- rua
+                    numero
+                    bairro
+                    cidade
+                    estado
+                    cep        -->
+                    <form id="form-adicionar" action="#" method="post">
+                        <div class="form-group">
+                            <label for="txtTipo">Tipo</label>
+                            <input type="text" placeholder="tipo" id="txtTipo" name="txtTipo"
+                                class="form-control" required/>
+                        </div>
+                        <div class="form-group">
+                            <label for="txtRua">Rua</label>
+                            <input type="text" placeholder="rua" id="txtRua" name="txtRua"
+                                class="form-control" />
+                        </div>
+                        <div class="form-group">
+                            <label for="txtNumero">Número</label>
+                            <input type="number" placeholder="número" id="txtNumero" name="txtNumero"
+                                class="form-control" />
+                        </div>
+                        <div class="form-group">
+                            <label for="txtBairro">Bairro</label>
+                            <input type="text" placeholder="bairro" id="txtBairro" name="txtBairro"
+                                class="form-control" />
+                        </div>
+                        <div class="form-group">
+                            <label for="txtCidade">Cidade</label>
+                            <input type="text" placeholder="cidade" id="txtCidade" name="txtCidade"
+                                class="form-control" />
+                        </div>
+                        <div class="form-group">
+                            <label for="txtEstado">Estado</label>
+                            <input type="text" placeholder="estado" id="txtEstado" name="txtEstado"
+                                class="form-control" />
+                        </div>
+                        <div class="form-group">
+                            <label for="txtCep">CEP</label>
+                            <input type="number" placeholder="CEP" id="txtCep" name="txtCep"
+                                class="form-control" />
+                        </div>
+
+                        <div class="d-flex justify-content-center">
+                            <button class="btn btn-success btn-lg btn-block" type="submit" id="btAdicionar">Adicionar</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+
+  <!-- SCRIPTS -->
+  <!-- JQuery -->
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+
+    <script src="http://ajax.microsoft.com/ajax/jquery.validate/1.7/jquery.validate.js" type="text/javascript"></script>
+    <script type="text/javascript" src="js/jquery.maskedinput.js"></script>
+
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <!-- Initializations -->
+  <script type="text/javascript">
+    // Animations initialization
+    new WOW().init();
+  </script>
+  <!-- Meu js -->
+  <script type="text/javascript" src="js/endereco.js"></script>
+  <script type="text/javascript" src="js/validarForm.js"></script>
+</body>
+
+</html>
+
